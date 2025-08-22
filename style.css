@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: aqua;
+  background-image: linear-gradient(
+    to bottom right,
+    transparent 40%,
+    #0003 50%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main {
+  width: 300px;
+  min-height: fit-content;
+  background-color: white;
+  border-radius: 29px;
+  box-shadow: 0 40px 50px rgb(199, 194, 194);
+}
+form {
+  margin: 30px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50px;
+}
+form input,
+form button {
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+form button:hover {
+  background-color: rgb(90, 85, 85);
+  border-radius: 50px;
+}
+.body-container {
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+}
+.flag-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-top: -20px;
+}
+.climate {
+  margin-top: 10px;
+}
+.climate p {
+  font-size: xx-large;
+  font-weight: 500;
+}
+.climate figcaption {
+  font-weight: 400;
+  font-size: x-large;
+}
+#weather-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+#weather-image {
+  /* border: 2px solid red; */
+  background-image: linear-gradient(to bottom right, transparent 1%, #0003 30%);
+  border-radius: 20%;
+}
+#weather-details div {
+  /* width: fit-content; */
+  width: 75px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(255, 138, 70);
+  background-image: linear-gradient(to bottom, transparent 50%, #0003 50%);
+  border-radius: 10px;
+}
+#weather-details div:nth-child(2) {
+  background-color: rgb(52, 92, 92);
+}
+#weather-details div:nth-child(3) {
+  background-color: rgb(57, 57, 143);
+}
+.error {
+  animation: errorEffect 0.3s linear 1;
+}
+@keyframes errorEffect {
+  0% {
+    transform: translate(10px, 2px);
+  }
+  25% {
+    transform: translate(-2px, 4px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(5px, 6px);
+  }
+  100% {
+    transform: translate(-5px, 0);
+  }
+}

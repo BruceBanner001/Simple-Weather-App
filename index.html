@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form>
+        <input type="text" autocomplete="off"  id="searching"/>
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <section class="body-container">
+        <figure class="flag-section">
+          <figcaption id="country">Trichy</figcaption>
+          &nbsp;
+          <img src="https://flagsapi.com/IN/shiny/32.png" id="flag"/>
+        </figure>
+        <figure class="climate">
+          <img src="https://openweathermap.org/img/wn/10d@4x.png" id="weather-image" />
+          <p id="temperature">31<sup>o</sup></p>
+          <figcaption id="weather-description">Overcast</figcaption>
+        </figure>
+        <div id="weather-details">
+          <div>
+            <p>Clouds</p>
+            <i class="fa-regular fa-cloud"></i>
+            <p id="clouds">90%</p>
+          </div>
+          <div>
+            <p>Humidity</p>
+            <i class="fa-solid fa-droplet"></i>
+            <p id="humidity">90%</p>
+          </div>
+          <div>
+            <p>Pressure</p>
+            <i class="fa-solid fa-gauge"></i>
+            <p id="pressure">90%</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
