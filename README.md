@@ -1,4 +1,4 @@
-This Project is **Weather Application** that fetches data from API and shows in the UI.
+This Project is **Weather Application** that fetches data from API and display in the UI.
 
 Instruction:
 
